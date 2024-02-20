@@ -1,38 +1,102 @@
-.App {
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
   text-align: center;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-item input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container button {
+  margin-left: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.add-todo-container {
+  margin-top: 20px;
+}
+
+.add-todo-container input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.add-todo-container button {
+  padding: 8px;
+  cursor: pointer;
+}
+
+
+.search-bar-container {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.search-bar-container input {
+  width: auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar-container input:focus {
+  outline: none;
+  border-color: #f0f0f0; /* Change to your preferred focus color */
+}
+
+.pagination-container {
+  margin-top: 20px;
+}
+
+.pagination-container button {
+  background-color: #007bff; /* Change to your preferred button color */
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.pagination-container button:hover {
+  background-color: #0056b3; /* Change to your preferred hover color */
 }
